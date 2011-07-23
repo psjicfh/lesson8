@@ -48,6 +48,12 @@
     a.out  lesson7.c  tags     //生成tags文件夹
     akaedu@akaedu-desktop:~/work/lesson7/lesson7_project$ vim lesson7.c
     把光标指到待查看的子函数名然后 “ctrl+]:查找下一个，ctrl+t:查找上一个”
+###例：把lesson7-project 写成标准的unix程序（程序具体内容见lesson7-projectlesson7-project）
+    akaedu@akaedu-desktop:~/work/lesson7/lesson7-project$ ctags *//可跳转看函数
+    akaedu@akaedu-desktop:~/work/lesson7/lesson7-project$ gcc -Wall lesson7.c say_three_hi.c say_three_hi.h  //注：编译时要有全部文件名
+    akaedu@akaedu-desktop:~/work/lesson7/lesson7-project$ git add lesson7.c say_three_hi.c say_three_hi.h  //由于新加了文件所以要通知
+    akaedu@akaedu-desktop:~/work/lesson7/lesson7-project$ git commit -a
+    akaedu@akaedu-desktop:~/work/lesson7/lesson7-project$ git push
 ###查看标准库(下面的我也不知道啥意思！)
     akaedu@akaedu-desktop:~/work/lesson7/lesson7_project$ ldd a.out
             linux-gate.so.1 =>  (0x00d1b000)
