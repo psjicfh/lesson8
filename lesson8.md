@@ -43,7 +43,13 @@
 ###快速查找main函数中调用的子函数
     kaedu@akaedu-desktop:~$ psjicfh ctags //安装软件
     akaedu@akaedu-desktop:~/work/lesson7/lesson7_project$ ctags lesson7.c
+    （若一个工程中有多个文件则格式是“ctags *”）
     akaedu@akaedu-desktop:~/work/lesson7/lesson7_project$ ls
     a.out  lesson7.c  tags     //生成tags文件夹
     akaedu@akaedu-desktop:~/work/lesson7/lesson7_project$ vim lesson7.c
     把光标指到待查看的子函数名然后 “ctrl+]:查找下一个，ctrl+t:查找上一个”
+###查看标准库(下面的我也不知道啥意思！)
+    akaedu@akaedu-desktop:~/work/lesson7/lesson7_project$ ldd a.out
+            linux-gate.so.1 =>  (0x00d1b000)
+            libc.so.6 => /lib/tls/i686/cmov/libc.so.6 (0x00ae0000)
+            /lib/ld-linux.so.2 (0x001d7000)
