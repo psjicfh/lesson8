@@ -40,4 +40,10 @@
     akaedu@akaedu-desktop:~$ scp -r peter@192.168.1.17:~/happycasts .
     从机关闭服务:sudo service ssh stop
     从机开启服务:sudo service ssh start
-
+###快速查找main函数中调用的子函数
+    kaedu@akaedu-desktop:~$ psjicfh ctags //安装软件
+    akaedu@akaedu-desktop:~/work/lesson7/lesson7_project$ ctags lesson7.c
+    akaedu@akaedu-desktop:~/work/lesson7/lesson7_project$ ls
+    a.out  lesson7.c  tags     //生成tags文件夹
+    akaedu@akaedu-desktop:~/work/lesson7/lesson7_project$ vim lesson7.c
+    把光标指到待查看的子函数名然后 “ctrl+]:查找下一个，ctrl+t:查找上一个”
